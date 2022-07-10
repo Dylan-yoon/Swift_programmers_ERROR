@@ -1,5 +1,6 @@
 func solution(_ s:String) -> String {
     let splitString = s.split(separator: " ")
+    print(splitString)
     var result = [String]()
     
     for word in splitString {
@@ -15,8 +16,12 @@ func solution(_ s:String) -> String {
         result.append(" ")
     }
     result.popLast()
-    return result.joined(separator: "")
+    var finalResult = result.joined(separator: "")
+
+    return finalResult
 }
 
-solution("try hello world")
+solution(" a")
+solution("try hello world ")
 solution("awerar")
+solution("     asdf       adsfa      ")
